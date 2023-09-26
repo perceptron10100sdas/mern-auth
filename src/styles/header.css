@@ -1,0 +1,16 @@
+.header{
+    color: blueviolet;
+    background-color: beige;
+    font-size: larger;
+    justify-content:center ;
+    align-items: flex;
+    flex: auto;
+}
+.items{
+    justify-items:flex-4;
+    align:flex;
+    margin-bottom: 0cqmax;
+    color: black;
+    flex-direction: column;
+    padding-left: 150px;
+}
