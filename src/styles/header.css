@@ -8,7 +8,9 @@
 }
 .items{
     justify-items:flex-4;
-    align:flex;
+    align-items:flex-end;
+    justify-content: space-between;
+padding-left: 20px;
     margin-bottom: 0cqmax;
     color: black;
     flex-direction: column;
