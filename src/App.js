@@ -5,6 +5,8 @@ import About from './pages/about'
 import Signup from './pages/signup'
 import Header from './components/Header'
 import Signin from './pages/signin'
+import Profile from './pages/profile'
+import PrivateRoute from './components/PrivateRoute';
 
 
 
@@ -14,10 +16,13 @@ export default function App() {
     <Header/>
     <div className='bg-black'>
   <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/about" element={<About/>}/>
-    <Route path="/sign" element={<Signup/>}/>
-    <Route path="/signin" element={<Signin/>}/>
+  <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/sign-in' element={<Signin />} />
+        <Route path='/sign-up' element={<Signup />} />
+        <Route element={<PrivateRoute />}>
+          <Route path='/profile' element={<Profile />} />
+        </Route>
 
   </Routes>
   </div>
